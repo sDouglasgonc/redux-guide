@@ -12,13 +12,13 @@ import * as Styles from "./styles";
 const ProductItem = ({ product }) => {
   const dispach = useDispatch()
 
-  const handleProductClick = () =>{
+  const handleProductsClick = () => {
   dispach(addProduct(product))
   }
   return (
     <Styles.ProductContainer>
       <Styles.ProductImage imageUrl={product.imageUrl}>
-        <CustomButton startIcon={<BsCartPlus />} onClick={handleProductClick} >
+        <CustomButton startIcon={<BsCartPlus />} onClick={handleProductsClick} >
           Adicionar ao carrinho
         </CustomButton>
       </Styles.ProductImage>
